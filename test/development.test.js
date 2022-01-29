@@ -11,8 +11,8 @@ it(`Testing to see if we can signin`, async () => {
       "content-type": "application/json"
     },
     body: JSON.stringify({
-      emailId: "highground@jedicouncil.com",
-      password: "High!ground69"
+      emailId: "myfriend@gmail.com",
+      password: "YoDaddy"
     })
   };
 
@@ -23,11 +23,15 @@ it(`Testing to see if we can signin`, async () => {
     const response = await fetch(loginUrl, options);
     json = await response.json();
     console.log("Response", json);
-  } catch (exception) {
+  } 
+  
+  catch (exception) {
     errorCaught = exception;
     errorWasCaught = true;
     throw console.log(errorCaught);
   }
 
   assert.equal(errorWasCaught,false);
+  console.log(json.code);
+  assert.equal(json.code,2012);
 });
