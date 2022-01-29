@@ -1,4 +1,11 @@
 {
+  "name": "api-tests",
+  "version": "1.0.0",
+  "description": "API tests for DevOps\r     Start date: 01-20-2022\r     Team Devops",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "dependencies": {
     "assert": "^2.0.0",
     "config": "^3.3.7",
@@ -9,8 +16,16 @@
   "scripts": {
     "test": "mocha"
   },
-  "directories": {
-    "test": "test"
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jneal43/api-tests.git"
   },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jneal43/api-tests/issues"
+  },
+  "homepage": "https://github.com/jneal43/api-tests#readme",
   "type": "module"
 }
