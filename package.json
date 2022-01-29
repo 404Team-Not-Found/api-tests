@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "scripts": {
         "test-dev": "cross-env NODE_ENV=development mocha",
         "test-test": "cross-env NODE_ENV=test mocha",
@@ -14,4 +15,37 @@
         "request-promise-native": "^1.0.8"
     },
     "type": "module"
+=======
+  "name": "api-tests",
+  "version": "1.0.0",
+  "description": "API tests for DevOps\r     Start date: 01-20-2022\r     Team Devops",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "node-modules": "^1.0.1",
+    "assert": "^2.0.0",
+    "config": "^3.3.7",
+    "cross-env": "^7.0.3",
+    "mocha": "^9.2.0",
+    "node-fetch": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "test-dev": "cross-env NODE_ENV=development mocha"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jneal43/api-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jneal43/api-tests/issues"
+  },
+  "homepage": "https://github.com/jneal43/api-tests#readme",
+  "type": "module"
+>>>>>>> 9de4d4400639d91a0bd0dabfb9ced49ad14673a5
 }

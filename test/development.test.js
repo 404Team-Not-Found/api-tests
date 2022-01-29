@@ -1,6 +1,11 @@
 import assert from 'assert';
+<<<<<<< HEAD:test/test.js
 import fetch from "node-fetch";
 import config from "config";
+=======
+import fetch from 'node-fetch';
+import config from 'config';
+>>>>>>> 9de4d4400639d91a0bd0dabfb9ced49ad14673a5:test/development.test.js
 
 const loginUrl = config.get("pitch59-url") + "/api/account/login";
 
@@ -12,8 +17,8 @@ it(`Testing to see if we can signin`, async () => {
       "content-type": "application/json"
     },
     body: JSON.stringify({
-      emailId: "highground@jedicouncil.com",
-      password: "High!ground69"
+      emailId: "myfriend@gmail.com",
+      password: "YoDaddy"
     })
   };
 
@@ -24,11 +29,15 @@ it(`Testing to see if we can signin`, async () => {
     const response = await fetch(loginUrl, options);
     json = await response.json();
     console.log("Response", json);
-  } catch (exception) {
+  } 
+  
+  catch (exception) {
     errorCaught = exception;
     errorWasCaught = true;
     throw console.log(errorCaught);
   }
 
   assert.equal(errorWasCaught,false);
+  console.log(json.code);
+  assert.equal(json.code,2012);
 });
