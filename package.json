@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "assert": "^2.0.0",
+    "config": "^3.3.7",
+    "cross-env": "^7.0.3",
+    "node-fetch": "^3.2.0"
+  },
+  "test":"module"
+
+}
