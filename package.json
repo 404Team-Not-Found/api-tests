@@ -14,7 +14,7 @@
         "node-fetch": "^2.6.1",
         "request-promise-native": "^1.0.8"
     },
-  "type": "module"
+  "type": "module",
   "name": "api-tests",
   "version": "1.0.0",
   "description": "API tests for DevOps\r     Start date: 01-20-2022\r     Team Devops",
