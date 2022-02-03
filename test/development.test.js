@@ -1,6 +1,6 @@
 import assert from 'assert';
-import fetch from 'node-fetch';
-import config from 'config';
+import fetch from "node-fetch";
+import config from "config";
 
 const loginUrl = config.get("pitch59-url") + "/api/account/login";
 
