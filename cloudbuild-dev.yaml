@@ -1,4 +1,4 @@
-#this is the main idea of this yaml file 
+#this is the main idea of this yaml file for the trigger
   steps:
   - name: 'gcr.io/cloud-builders/docker'
     id: Build Docker Image
