@@ -1,5 +1,4 @@
-#comment to test trigger
-
+#comment to test trigger yet again but this time it works for sure
 #this is the main idea of this yaml file for the trigger
   steps:
   - name: 'gcr.io/cloud-builders/docker'
