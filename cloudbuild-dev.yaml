@@ -1,0 +1,8 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  id: Build Docker Image
+  args:
+  - 'build'
+  - '.'
+  - '-t'
+  - 'gcr.io/SPROJECT_ID/stedi-api-tests'
