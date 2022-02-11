@@ -1,8 +1,11 @@
-steps:
-- name: 'gcr.io/cloud-builders/docker'
-  id: Build Docker Image
-  args:
-  - 'build'
-  - '.'
-  - '-t'
-  - 'gcr.io/SPROJECT_ID/stedi-api-tests'
+#this is the main idea of this yaml file for the trigger
+#This is the original file
+#ayooooooo
+  steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    id: Build Docker Image
+    args:
+    - 'build'
+    - '.'
+    - '-t'
+    - 'gcr.io/$PROJECT_ID/api-tests:latest'
