@@ -13,5 +13,3 @@ RUN npm run test
 CMD npm run test
 
 CMD npm run test-dev
-© 2022 GitHub, Inc.
-Terms
