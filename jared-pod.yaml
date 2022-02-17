@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jared-neal
+spec: 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jared-neal
+  template:
+    metadata:
+      labels:
+        app: jared-neal
+    spec: 
+      containers:
+      - name: jared-neal
+        image: nginx
+        ports: 
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: 100m
+            memory: 250m
+          requests:
+            cpu: 50m
+            memory: 100m
