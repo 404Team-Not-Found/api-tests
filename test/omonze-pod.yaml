@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-tests
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-tests
+  template:
+    metadata:
+      labels:
+        app: api-tests
+    spec:
+      containers:
+      - name: api-tests
+        image: nginx
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: 100m
+            memory: 250m
+          requests:
+            cpu: 50m
+            memory: 100m
