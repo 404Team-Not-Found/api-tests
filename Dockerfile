@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . /app
 
-RUN npm clean-install
+RUN npm install
 
 RUN npm run test-dev
 
