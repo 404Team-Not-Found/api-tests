@@ -1,0 +1,9 @@
+#this is the main idea of this yaml file
+  steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    id: Build Docker Image
+    args:
+    - 'build'
+    - '.'
+    - '-t'
+    - 'gcr.io/$PROJECT_ID/api-tests:latest'

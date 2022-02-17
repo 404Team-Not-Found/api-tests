@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: maddie-christensen
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: maddie-christensen
+  template:
+    metadata:
+      labels:
+        app: maddie-christensen
+    spec:
+      containers:
+      - name: maddie-christensen
+        image: nginx
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: 100m
+            memory: 250m
+          requests:
+            cpu: 50m
+            memory: 100m
