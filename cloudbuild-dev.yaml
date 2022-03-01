@@ -9,3 +9,9 @@
     - '.'
     - '-t'
     - 'gcr.io/$PROJECT_ID/api-tests:latest'
+
+  - name: 'gcr.io/cloud-builders/docker'
+    id: Push
+    args:
+    - 'push'
+    - 'gcr.io/$PROJECT_ID/constellationweb:latest'
