@@ -9,3 +9,12 @@
     - '.'
     - '-t'
     - 'gcr.io/$PROJECT_ID/api-tests:latest'
+
+#this step pushes the image to container registry
+#the PROJECT_ID and SHORT_SHA variables are automatically
+#replaced by cloud build
+  - name: 'gcr.io/cloud-builders/docker'
+    id: Push 
+    args:
+    - 'push'
+    - 'gcr.io/$PROJECT_ID/api-tests:latest'
