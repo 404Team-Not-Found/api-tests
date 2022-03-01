@@ -9,3 +9,13 @@
     - '.'
     - '-t'
     - 'gcr.io/$PROJECT_ID/api-tests:latest'
+
+# This step pushes the imaget ot Container Registry
+# The PROJECT_ID and SHORT_SHA varables are automatically
+# repalced by Cloud Build
+
+  - name: 'gcr.io/cloud-builders/docker'
+    id: Push
+    args:
+    - 'push'
+    - 'gcr.io/$PROJECT_ID/api-tests:latest'
