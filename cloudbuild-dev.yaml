@@ -6,3 +6,16 @@ steps:
   - '.'
   - '-t'
   - 'gcr.io/$PROJECT_ID/api-tests:latest'
+
+# the above command runs: docker build -t gcr.io/$PROJECT_ID/constellationweb:latest
+
+# this step pushes the image to container Registry
+#The PROJECT_ID and SHORT_SHA variables are automatically
+# replaced by Cloud build
+
+  -name: 'gcr.io/cloud-builders/docker'
+   id: Push
+   args:
+   - 'push'
+  - 'gcr.io/$PROJECT_ID/api-tests:latest'
+   
