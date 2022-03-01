@@ -13,9 +13,8 @@ steps:
 #The PROJECT_ID and SHORT_SHA variables are automatically
 # replaced by Cloud build
 
-  -name: 'gcr.io/cloud-builders/docker'
+  - name: 'gcr.io/cloud-builders/docker'
    id: Push
    args:
    - 'push'
-  - 'gcr.io/$PROJECT_ID/api-tests:latest'
-   
+   - 'gcr.io/$PROJECT_ID/api-tests:latest'
