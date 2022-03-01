@@ -1,11 +1,11 @@
 steps:
-- name: 'gcr.io/cloud-builders/docker'
-  id: Build Docker Image
-  args:
-  - 'build'
-  - '.'
-  - '-t'
-  - 'gcr.io/$PROJECT_ID/api-tests:latest'
+  - name: 'gcr.io/cloud-builders/docker'
+    id: Build Docker Image
+    args:
+    - 'build'
+    - '.'
+    - '-t'
+    - 'gcr.io/$PROJECT_ID/api-tests:latest'
 
 # the above command runs: docker build -t gcr.io/$PROJECT_ID/constellationweb:latest
 
