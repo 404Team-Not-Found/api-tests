@@ -5,4 +5,4 @@ steps:
   - 'build'
   - '.'
   - '-t'
-  - 'gcr.io/SPROJECT_ID/stedi-api-tests'
+  - 'gcr.io/$PROJECT_ID/api-tests:latest'
