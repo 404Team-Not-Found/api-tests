@@ -9,4 +9,3 @@
     - '.'
     - '-t'
     - 'gcr.io/$PROJECT_ID/api-tests:latest'
-git comm
