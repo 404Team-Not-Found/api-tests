@@ -11,6 +11,7 @@ steps:
 # this step pushes the image to container Registry
 #The PROJECT_ID and SHORT_SHA variables are automatically
 # replaced by Cloud build
+   
   - name: 'gcr.io/cloud-builders/docker'
     id: Push
     args:
